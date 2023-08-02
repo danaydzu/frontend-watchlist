@@ -1,19 +1,24 @@
 import React from 'react';
 import {Routes, Route} from "react-router-dom"
 import Home from "./components/home/Home";
-import Login from "./components/auth/login/Login";
-import './App.css';
+
+import './index.css'
 import PrivateRoute from "./utils/router/PrivateRoute";
+
+import AuthRootComponent from "./components/auth/AuthRootComponent";
 
 function App() {
     return (
         <div className="App">
             <Routes>
 
-                <Route path="login" element={<Login/>}/>
+                <Route path="login" element={<AuthRootComponent/>}/>
                 <Route element={<PrivateRoute/>}>
                     <Route path="/" element={<Home/>}/>
                 </Route>
+                <Route path="registration" element={<AuthRootComponent/>}/>
+
+
             </Routes>
 
         </div>
