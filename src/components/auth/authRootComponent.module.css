@@ -1,0 +1,14 @@
+.root {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5% 0; }
+  .root .form {
+    width: 60%; }
+    .root .form .text {
+      color: #1900D5;
+      cursor: pointer; }
+
+/*# sourceMappingURL=authRootComponent.module.css.map */
